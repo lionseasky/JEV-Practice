@@ -1,0 +1,18 @@
+# 密钥与本地环境
+.env
+.env.local
+
+# 报告产物（每次运行都会重新生成）
+report/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.uv/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/

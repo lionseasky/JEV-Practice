@@ -1,0 +1,26 @@
+{
+  "_comment": "Jev 能力摸底实验台的可调参数。API Key 建议填在 .env 里；如要填在这里，用下面的 api_key 字段。",
+
+  "api_key": "",
+
+  "base_url": "https://api.typesafe.ai",
+  "model": "jev-latest",
+
+  "timeout_seconds": 60,
+  "max_retries": 4,
+
+  "output_dir": "report",
+
+  "_comment_confidence": "置信度门控阈值。官方建议先保守、再用你自己的数据调。建议先用 S02 的实测分布来定这三个数。",
+  "confidence_act": 0.9,
+  "confidence_confirm": 0.6,
+  "noul_threshold": 0.5,
+
+  "_comment_noise": "S06 噪音套件注入的无关文本段数。段数越大越能看出准确率与成本的退化。",
+  "noise_repeat_mid": 60,
+  "noise_repeat_large": 260,
+
+  "_comment_perf": "S09 性能套件的并发档位与延迟采样次数。",
+  "concurrency_levels": [1, 4, 16],
+  "perf_repeats": 3
+}
